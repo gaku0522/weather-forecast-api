@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  height: 480px;
+  width: 720px;
+  margin: 0 auto;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+}
+
+.latLng-ul{
+  text-align: center;
+}
+
+.latLng-content {
+  display: inline-block;
+}
