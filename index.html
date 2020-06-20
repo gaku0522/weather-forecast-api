@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>Test Map</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="description" content="あああああああ">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+  <link rel="stylesheet" href="weather/css/base/default.css">
+  <link rel="stylesheet" href="weather/css/layout/default.css">
+  <link rel="stylesheet" href="weather/css/module/modules.css">
+</head>
+
+<body>
+
+  <div class="container">
+  <!-- header -->
+    <header class="l-content-fixed header">
+      <h1 class="header-logo">
+        <img src="weather/images/sun.svg" alt="天気のロゴ">Forecast with map!
+      </h1>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li class="nav-menu-item"><a class="btn btn_highlighted" href="https://weather.yahoo.co.jp/weather/">詳しい天気</a></li>
+          <li class="nav-menu-item"><a class="btn btn_highlighted" href="https://www.google.com/maps/@32.9998961,138.4293071,5z">地図情報</a></li>
+          <li class="nav-menu-item"><a class="btn btn_highlighted" href="#form">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <!-- hero image -->
+      <section class="l-content-expanded hero">
+        <h2 class="hero-title">
+          リアルタイムな天気予報を<br>Weathering with API
+        </h2>
+      </section>
+      </div>
+
+      <!-- title -->
+      <section class="l-content-fixed">
+        <header class="section-header">
+          <h2 class="section-title">Forecast</h2>
+          <p class="section-subtitle">天気予報を見る</p>
+        </header>
+      </section>
+
+  <!-- forecast -->
+  <div id="map"></div>
+
+
+        <div class="weatherMain">
+
+            <table>
+              <div class="day">
+                  <div>
+                      <div>
+                          <span class="now-span">現在</span>
+                      </div>
+                      <div>
+                          <span>天気：</span><span class="dayWeather"></span>
+                      </div>
+                      <div>
+                          <img class="dayWeatherIcon">
+                      </div>
+                      <div>
+                          <span>気温：</span><span class="nowTemp"></span><span>度</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="tomorrow">
+                  <div>
+                      <div>
+                          <span class="tomorrow-span">明日</span>
+                      </div>
+                      <div>
+                          <span>天気：</span><span class="tomorrowWeather"></span>
+                      </div>
+                      <div>
+                          <img class="tomorrowWeatherIcon">
+                      </div>
+                      <div>
+                          <span>気温：</span><span class="tomorrowTemp"></span><span>度</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="dayAfterTomorrow">
+                  <div>
+                      <div>
+                          <span class="dayAfterTomorrow-span">明後日</span>
+                      </div>
+                      <div>
+                          <span>天気：</span><span class="dayAfterTomorrowWeather"></span>
+                      </div>
+                      <div>
+                          <img class="dayAfterTomorrowWeatherIcon">
+                      </div>
+                      <div>
+                          <span>気温：</span><span class="dayAfterTomorrowTemp"></span><span>度</span>
+                      </div>
+                  </div>
+              </div>
+            </table>
+
+            <div class="latLng-content">
+              <ul class="latLng-ul">
+                <li class="latLng-li">緯度: <span id="lat"></span></li>
+                <li class="latLng-li">経度: <span id="lng"></span></li>
+              </ul>
+            </div>
+
+        </div>
+
+  <script src="weather/js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtLjDeHBgADvNyeCvzd_5zyauHWdLPDMw&&callback=initMap"></script>
+
+
+  <div class="container">
+    <!-- contact -->
+    <section class="l-content-fixed section" id="form">
+      <header class="section-header">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">お問い合わせ</p>
+      </header>
+      <div class="section-form">
+        <form class="form-simple" name="formContact" method="post">
+          <p class="form-label">お名前</p>
+          <p class="form-input">
+            <input type="text" name="name" placeholder="山田　太郎">
+          </p>
+          <p class="form-label">メールアドレス</p>
+          <p class="form-input">
+            <input type="email" name="name" placeholder="abc@example.co.jp">
+          </p>
+          <p class="form-label">内容</p>
+          <p class="form-input">
+            <textarea name="content" rows="15" placeholder="お問い合わせを入力してください．"></textarea>
+          </p>
+          <p class="form-btn-holder">
+            <button type="submit" class="btn">送信する</button>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="l-content-expanded footer">
+      <div class="l-content-fixed footer-content">
+        <p class="footer-title">
+          <small>
+             @琉球大学　小林研究室
+          </small>
+        </p>
+        <a href="#container">
+          <p class="footer-totop"></p>
+        </a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
