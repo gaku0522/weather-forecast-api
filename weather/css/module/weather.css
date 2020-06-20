@@ -1,0 +1,29 @@
+.section {
+	padding-top: 60px;
+	font-size: 1rem;
+}
+
+.section-form {
+  width: 60%;
+  margin: 2em auto;
+}
+
+.section-header {
+	margin: 0 0 2.5em 0;
+	line-height: 1.2;
+  text-align: center;
+}
+
+.section-title {
+	margin: 0;
+	font-family: "Caveat", sans-serif;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+.section-subtitle {
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 60px;
+}
