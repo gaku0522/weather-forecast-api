@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.header-logo {
+  margin: 0px;
+  font-size: 2em;
+  line-height: 1px;
+  font-family: Caveat,Lato, sans-serif;
+}
+.header-logo img {
+  width: 1em;
+  height: 1em;
+  padding-top: 5px;
+}
