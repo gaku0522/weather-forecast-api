@@ -1,0 +1,17 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 520px;
+  background-size: cover;
+  background: url("../../images/sky.jpg");
+  margin-bottom: 60px;
+}
+
+.hero-title {
+  margin: 0;
+  line-height: 1;
+  font-size: 36px;
+  font-family: Caveat,Lato, sans-serif;
+  text-align: center;
+}
