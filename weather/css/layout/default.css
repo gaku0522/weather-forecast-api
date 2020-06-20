@@ -1,0 +1,13 @@
+#container {
+  min-width: 980px;
+}
+
+.l-content-fixed {
+  width:   980px;
+  margin: 0 auto;
+}
+
+.l-content-expanded {
+  width: auto;
+  margin:   0;
+}
