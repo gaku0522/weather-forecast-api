@@ -1,0 +1,18 @@
+.nav-menu {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.nav-menu-item + .nav-menu-item {
+  margin-left: 2em;
+}
+
+.mav-menu-item a{
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-menu-item .btn_highlighted {
+  color: white;
+}
